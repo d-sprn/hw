@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38a1788a-5c08-4e0e-814d-e761eb0376eb" name="Changes" comment="another code for calc">
+    <list default="true" id="38a1788a-5c08-4e0e-814d-e761eb0376eb" name="Changes" comment="&quot;use strict&quot;;">
       <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,15 +18,15 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="hw_2_2/strange_calc_no.1" />
+        <entry key="$PROJECT_DIR$" value="hw_4/strange_calc_no.2" />
       </map>
     </option>
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "node.js.selected.package.tslint": "(autodetect)"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
   }
-}]]></component>
+}</component>
   <component name="TaskManager">
     <task id="LOCAL-00001" summary="add readme">
       <created>1678019221870</created>
@@ -42,7 +42,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678019338558</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="&quot;use strict&quot;;">
+      <created>1678019948327</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1678019948327</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -59,6 +66,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add readme" />
     <MESSAGE value="another code for calc" />
-    <option name="LAST_COMMIT_MESSAGE" value="another code for calc" />
+    <MESSAGE value="&quot;use strict&quot;;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;use strict&quot;;" />
   </component>
 </project>
