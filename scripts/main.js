@@ -17,7 +17,7 @@ console.log(Number(1 + String(1)) + 1);              // 12
 // Task #2
 
 
-let hour = Number(prompt('Enter the number of hours'));
+const hour = Number(prompt('Enter the number of hours'));
 
 alert(`In ${hour} hours ${hour*3600} seconds.`);
 

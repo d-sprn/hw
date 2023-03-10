@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38a1788a-5c08-4e0e-814d-e761eb0376eb" name="Changes" comment="renew readme">
-      <change afterPath="$PROJECT_DIR$/scripts/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/index.js" beforeDir="false" />
+    <list default="true" id="38a1788a-5c08-4e0e-814d-e761eb0376eb" name="Changes" comment="hw_6">
+      <change beforePath="$PROJECT_DIR$/scripts/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,9 +71,16 @@
       <option name="presentableId" value="Default" />
       <updated>1678379822865</updated>
       <workItem from="1678379823873" duration="521000" />
-      <workItem from="1678443539497" duration="1014000" />
+      <workItem from="1678443539497" duration="1127000" />
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="hw_6">
+      <created>1678444588118</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1678444588118</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -98,6 +101,7 @@
     <MESSAGE value="add readme" />
     <MESSAGE value="another code for calc" />
     <MESSAGE value="&quot;use strict&quot;;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;use strict&quot;;" />
+    <MESSAGE value="hw_6" />
+    <option name="LAST_COMMIT_MESSAGE" value="hw_6" />
   </component>
 </project>
