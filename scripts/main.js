@@ -18,8 +18,9 @@ console.log(Number(1 + String(1)) + 1);              // 12
 
 
 const hour = Number(prompt('Enter the number of hours'));
+const result = hour * 3600
 
-alert(`In ${hour} hours ${hour*3600} seconds.`);
+alert('In', hour, 'hours', result, 'seconds.');
 
 
 // Task #3
@@ -30,7 +31,7 @@ num += 12;
 num -= 14;
 num *= 5;
 num /= 7;
-num++;
-num--;
+num ++;
+num --;
 
 console.log(num)
