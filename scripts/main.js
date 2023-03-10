@@ -25,6 +25,7 @@ alert('In', hour, 'hours', result, 'seconds.');
 
 // Task #3
 
+
 let num = 1;
 
 num += 12;
