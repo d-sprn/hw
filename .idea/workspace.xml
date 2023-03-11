@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38a1788a-5c08-4e0e-814d-e761eb0376eb" name="Changes" comment="&quot;use strict&quot;;">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/index.js" afterDir="false" />
-    </list>
+    <list default="true" id="38a1788a-5c08-4e0e-814d-e761eb0376eb" name="Changes" comment="hw_8" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,7 +68,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678445317089</updated>
-      <workItem from="1678445318091" duration="419000" />
+      <workItem from="1678445318091" duration="534000" />
     </task>
     <task id="LOCAL-00004" summary="hw_7">
       <created>1678445334167</created>
@@ -81,7 +77,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678445334167</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="hw_8">
+      <created>1678445752373</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1678445752373</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,6 +106,7 @@
     <MESSAGE value="another code for calc" />
     <MESSAGE value="&quot;use strict&quot;;" />
     <MESSAGE value="hw_7" />
-    <option name="LAST_COMMIT_MESSAGE" value="hw_7" />
+    <MESSAGE value="hw_8" />
+    <option name="LAST_COMMIT_MESSAGE" value="hw_8" />
   </component>
 </project>
