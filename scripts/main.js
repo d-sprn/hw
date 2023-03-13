@@ -7,7 +7,7 @@ const a = Number(prompt('Write first number'))
 const b = Number(prompt('Write second number'))
 
 function equalityOne(){
-    return a === b;
+    return alert(a === b);
 }
 
 equalityOne()
@@ -17,7 +17,7 @@ equalityOne()
 // Task #2
 
 function equalityTwo(){
-    return (a + b) === 10;
+    return alert((a + b) === 10);
 }
 
 equalityTwo()
@@ -31,7 +31,7 @@ const c = Number(prompt('Write number'))
 
 
 function negative(){
-    return c < 0;
+    return alert(c < 0);
 }
 
 negative()

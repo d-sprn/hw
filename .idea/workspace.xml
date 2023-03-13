@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="38a1788a-5c08-4e0e-814d-e761eb0376eb" name="Changes" comment="Beginning">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +74,14 @@
       <workItem from="1678630462466" duration="337000" />
       <workItem from="1678715949984" duration="565000" />
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Beginning">
+      <created>1678718600282</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1678718600282</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -96,6 +102,7 @@
     <MESSAGE value="add readme" />
     <MESSAGE value="another code for calc" />
     <MESSAGE value="&quot;use strict&quot;;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;use strict&quot;;" />
+    <MESSAGE value="Beginning" />
+    <option name="LAST_COMMIT_MESSAGE" value="Beginning" />
   </component>
 </project>
