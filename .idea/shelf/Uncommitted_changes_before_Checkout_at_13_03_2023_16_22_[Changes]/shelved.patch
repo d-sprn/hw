@@ -1,0 +1,102 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"38a1788a-5c08-4e0e-814d-e761eb0376eb\" name=\"Changes\" comment=\"&quot;use strict&quot;;\">\r\n      <change afterPath=\"$PROJECT_DIR$/readme.md\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ComposerSettings\">\r\n    <execution />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"hw_4/strange_calc_no.2\" />\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;\r\n  }\r\n}</component>\r\n  <component name=\"TaskManager\">\r\n    <task id=\"LOCAL-00001\" summary=\"add readme\">\r\n      <created>1678019221870</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1678019221870</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"another code for calc\">\r\n      <created>1678019338558</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1678019338558</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"&quot;use strict&quot;;\">\r\n      <created>1678019948327</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1678019948327</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"4\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"add readme\" />\r\n    <MESSAGE value=\"another code for calc\" />\r\n    <MESSAGE value=\"&quot;use strict&quot;;\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"&quot;use strict&quot;;\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision bc63ccd9e0d29f5284da8838ebe499c33a83002e)
++++ b/.idea/workspace.xml	(date 1678717056823)
+@@ -4,9 +4,7 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="38a1788a-5c08-4e0e-814d-e761eb0376eb" name="Changes" comment="&quot;use strict&quot;;">
+-      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+-    </list>
++    <list default="true" id="38a1788a-5c08-4e0e-814d-e761eb0376eb" name="Changes" comment="hw_7" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -18,15 +16,30 @@
+   <component name="Git.Settings">
+     <option name="RECENT_BRANCH_BY_REPOSITORY">
+       <map>
+-        <entry key="$PROJECT_DIR$" value="hw_4/strange_calc_no.2" />
++        <entry key="$PROJECT_DIR$" value="hw_7/equality_functions" />
+       </map>
+     </option>
++  </component>
++  <component name="MarkdownSettingsMigration">
++    <option name="stateVersion" value="1" />
++  </component>
++  <component name="ProjectId" id="2MuvnrAzdTUPKHfwvThDcCIMHym" />
++  <component name="ProjectViewState">
++    <option name="hideEmptyMiddlePackages" value="true" />
++    <option name="showLibraryContents" value="true" />
+   </component>
+   <component name="PropertiesComponent">{
+   &quot;keyToString&quot;: {
+-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
++    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
++    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
++    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
++    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+   }
+ }</component>
++  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+     <task id="LOCAL-00001" summary="add readme">
+       <created>1678019221870</created>
+@@ -49,9 +62,35 @@
+       <option name="project" value="LOCAL" />
+       <updated>1678019948327</updated>
+     </task>
+-    <option name="localTasksCounter" value="4" />
++    <task active="true" id="Default" summary="Default task">
++      <changelist id="38a1788a-5c08-4e0e-814d-e761eb0376eb" name="Changes" comment="hw_8" />
++      <created>1678630461130</created>
++      <option name="number" value="Default" />
++      <option name="presentableId" value="Default" />
++      <updated>1678630461130</updated>
++      <workItem from="1678630462466" duration="337000" />
++      <workItem from="1678715949984" duration="954000" />
++    </task>
++    <task id="LOCAL-00004" summary="hw_9">
++      <created>1678716537463</created>
++      <option name="number" value="00004" />
++      <option name="presentableId" value="LOCAL-00004" />
++      <option name="project" value="LOCAL" />
++      <updated>1678716537463</updated>
++    </task>
++    <task id="LOCAL-00005" summary="hw_7">
++      <created>1678716748285</created>
++      <option name="number" value="00005" />
++      <option name="presentableId" value="LOCAL-00005" />
++      <option name="project" value="LOCAL" />
++      <updated>1678716748285</updated>
++    </task>
++    <option name="localTasksCounter" value="6" />
+     <servers />
+   </component>
++  <component name="TypeScriptGeneratedFilesManager">
++    <option name="version" value="3" />
++  </component>
+   <component name="Vcs.Log.Tabs.Properties">
+     <option name="TAB_STATES">
+       <map>
+@@ -67,6 +106,8 @@
+     <MESSAGE value="add readme" />
+     <MESSAGE value="another code for calc" />
+     <MESSAGE value="&quot;use strict&quot;;" />
+-    <option name="LAST_COMMIT_MESSAGE" value="&quot;use strict&quot;;" />
++    <MESSAGE value="hw_9" />
++    <MESSAGE value="hw_7" />
++    <option name="LAST_COMMIT_MESSAGE" value="hw_7" />
+   </component>
+ </project>
+\ No newline at end of file
