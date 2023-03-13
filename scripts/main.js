@@ -6,23 +6,22 @@ const a = Number(prompt('Write first number'))
 
 const b = Number(prompt('Write second number'))
 
-function equalityOne(){
-    return alert(a === b);
+function equalityOne(a, b){
+    return a === b;
 }
 
-equalityOne()
-
+console.log(equalityOne(a, b))
+alert(equalityOne(a, b))
 
 
 // Task #2
 
-function equalityTwo(){
-    return alert((a + b) === 10);
+function equalityTwo(a, b){
+    return (a + b) === 10;
 }
 
-equalityTwo()
-
-
+console.log(equalityTwo(a, b))
+alert(equalityTwo(a, b))
 
 
 // Task 3
@@ -30,8 +29,9 @@ equalityTwo()
 const c = Number(prompt('Write number'))
 
 
-function negative(){
-    return alert(c < 0);
+function negative(c){
+    return c < 0;
 }
 
-negative()
+console.log(negative(c))
+alert(negative(c))
