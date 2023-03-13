@@ -4,18 +4,51 @@ const age = prompt('Write your age');
 
 const city = prompt('Write your city');
 
-// const sport = prompt('Write your favourite sport');
-let sport = null;
-
-
 let userCountry = null;
 
 let userSport = null;
 
+let sport = null;
 
-if(age === true && city === true){
+
+if(age !== null && city !== null  ){
     sport = prompt('Write your favourite sport');
 }
+
+
+
+if(age === null){
+    alert('Why you don\'t tell your age?');
+}
+if (city === null) {
+    alert('Why you don\'t tell your city?');
+}
+if (sport === null){
+    alert('Why you don\'t tell yur favourite sport?')
+}
+
+// function checkUser(){
+//     if(age === null){
+//       return alert('Why you don\'t tell your age?');
+//     } else if (city === null) {
+//         return alert('Why you don\'t tell your city?');
+//     } else if (sport === null){
+//         alert('Why you don\'t tell yur favourite sport?');
+//     } else {
+//         return alert(summary)
+//     }
+// }
+
+
+// if(age === null){
+//     alert('Why you don\'t tell your age?');
+//     } else if (city === null) {
+//     alert('Why you don\'t tell your city?');
+//     } else if (sport === null){
+//      alert('Why you don\'t tell yur favourite sport?');
+//     } else {
+//       alert(summary)
+//     }
 
 switch (city){
     case 'Kiev':
@@ -41,8 +74,6 @@ switch (sport){
         break;
 }
 
-// let summary = ('Your age: ', age, 'You live in capital of: ', userCountry, 'You want to be like: ', userSport)
+let summary = `Your age: ${age}, You live in capital of ${userCountry}, You want be like: ${userSport}`
 
-alert(('Your age: ', age, 'You live in capital of: ', userCountry, 'You want to be like: ', userSport))
-
-// alert(summary)
+alert(summary)
