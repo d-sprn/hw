@@ -4,76 +4,68 @@ const age = prompt('Write your age');
 
 const city = prompt('Write your city');
 
-let userCountry = null;
+let userAge = null;
 
-let userSport = null;
+let userCountry = null;
 
 let sport = null;
 
+let userSport = null;
 
-if(age !== null && city !== null  ){
+
+
+if(age !== null && city !== null){
     sport = prompt('Write your favourite sport');
 }
 
 
-
 if(age === null){
-    alert('Why you don\'t tell your age?');
+    userAge = 'Why you don\'t tell your age?';
+}else if(age === ''){
+    userAge = 'Why you don\'t tell your age?';
+}else{
+    userAge = `Your age: ${age}`
 }
+
+
 if (city === null) {
-    alert('Why you don\'t tell your city?');
+    userCountry = 'Why you don\'t tell your city?';
+}else if(city === ''){
+    userCountry = 'Why you don\'t tell your city?';
+} else if(city === 'Kiev'){
+    userCountry = 'You live in capital of Ukraine';
+} else if(city === 'moscow'){
+    userCountry = 'You live in capital of russia';
+}else if(city === 'minsk'){
+    userCountry = 'You live in capital of belarusia';
+}else{
+    userCountry = `You live in city; ${city}`
 }
+
+
 if (sport === null){
-    alert('Why you don\'t tell yur favourite sport?')
+    userSport = 'Why you don\'t tell your favourite sport?';
+} else if(sport === ''){
+    userSport = 'Why you don\'t tell your favourite sport?';
 }
 
-// function checkUser(){
-//     if(age === null){
-//       return alert('Why you don\'t tell your age?');
-//     } else if (city === null) {
-//         return alert('Why you don\'t tell your city?');
-//     } else if (sport === null){
-//         alert('Why you don\'t tell yur favourite sport?');
-//     } else {
-//         return alert(summary)
-//     }
-// }
-
-
-// if(age === null){
-//     alert('Why you don\'t tell your age?');
-//     } else if (city === null) {
-//     alert('Why you don\'t tell your city?');
-//     } else if (sport === null){
-//      alert('Why you don\'t tell yur favourite sport?');
-//     } else {
-//       alert(summary)
-//     }
-
-switch (city){
-    case 'Kiev':
-        userCountry = 'Ukraine';
-        break;
-    case 'moscow':
-        userCountry = 'russia';
-        break
-    case 'minsk':
-        userCountry = 'belorusia';
-        break
-}
 
 switch (sport){
     case 'football':
-        userSport = 'Ronaldo';
+        userSport = 'You want be like: Ronaldo';
         break;
     case 'tennis':
-        userSport = 'Federer';
+        userSport = 'You want be like: Federer';
         break;
     case 'hockey':
-        userSport = 'Gretzky';
+        userSport = 'You want be like: Gretzky';
         break;
 }
 
-let summary = `Your age: ${age}, You live in capital of ${userCountry}, You want be like: ${userSport}`
+
+
+let summary = `${userAge},\n ${userCountry},\n ${userSport}!!!`
+
 
 alert(summary)
+
