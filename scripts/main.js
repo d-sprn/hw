@@ -21,9 +21,10 @@ switch (ageCheck){
     case 27: case 28: case 29: case 30: case 35: case 36:
     case 37: case 38: case 39: case 40: case 45: case 46:
     case 47: case 48: case 49: case 50: case 0:
-        ageResult = `${age} let`
+        ageResult = `${age} let`;
+        break;
 }
 
-alert(ageResult)
+alert(ageResult);
 
 
