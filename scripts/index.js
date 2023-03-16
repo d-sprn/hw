@@ -20,7 +20,7 @@ if(value > 0 && !isNaN(value) && value < 10){
 
 
 
-let numOrStr = prompt('input number or string');
+const numOrStr = prompt('input number or string');
 console.log(numOrStr)
 
 
