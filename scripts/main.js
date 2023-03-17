@@ -26,8 +26,9 @@ if (checkNum === 0) {
 
 
 
-const num1= +prompt('Ender negative or positive number');
+const num1= +prompt('Enter negative or positive number');
 const checkNum2 = num1 < 0;
+let lengthNum = String(num1).length;
 
 let checkedNum = null;
 
@@ -38,35 +39,25 @@ if(checkNum2 === true){
 }
 
 
-alert(`${checkedNum}`)
+alert(`${checkedNum}, number of symbols ${lengthNum}!)`);
 
 // Task #4
 
-const num2 = +prompt('Enter the three-digit number');
-const numString = String(num2);
-
-let numStringResult = null;
-
+const number1 = +prompt('Write number.');
+const number2 = +prompt('Write number.');
+const number3 = +prompt('Write number.');
 
 
-if(numString.slice(0, 1) > numString.slice(1, 2) && numString.slice(0, 1) > numString.slice(2, 3)){
-  numStringResult = `Largest number is ${numString.slice(0, 1)}!!`;
-}
-else if(numString.slice(1, 2) > numString.slice(0, 1) && numString.slice(1, 2) > numString.slice(2, 3)){
-  numStringResult = `Largest number is ${numString.slice(1, 2)}!!`;
-}
-else if(numString.slice(2, 3) > numString.slice(0, 1) && numString.slice(2, 3) > numString.slice(1, 2)){
-  numStringResult = `Largest number is ${numString.slice(2, 3)}!!`;
-}
-else if(numString.slice(0, 1) === numString.slice(1, 2) && numString.slice(0, 1) === numString.slice(2, 3) && numString.slice(1, 2) === numString.slice(2, 3)) {
-  numStringResult = 'All number is same!!!';
-}
-else{
-  numStringResult = 'Try again :(';
+let result4 = null
+if(number1 > number2 && number1 > number3){
+  result4 = `Largest number is  ${number1}`;
+}else if(number2 > number1 && number2 > number3){
+    result4 = `Largest number is  ${number2}`;
+  }else{
+  result4 = `Largest number is  ${number3}`;
 }
 
-
-alert(`${numStringResult} \n The number of symbols: ${(numString.length)}!!`)
+alert(result4)
 
 
 // Task #5
@@ -77,14 +68,14 @@ const b = +prompt('Write second length');
 const c = +prompt('Write third length');
 
 
-let result = null;
+let result5 = null;
 
 
 if(a + b > c && a + c > b && c + b > a){
-  result = 'Triangle done!!';
+  result5 = 'Triangle done!!';
 } else {
-  result = 'Triangle broke :('
+  result5 = 'Triangle broke :('
 }
 
 
-alert(`${result}`)
+alert(result5)
