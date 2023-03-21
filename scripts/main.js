@@ -9,3 +9,6 @@ function pow(number = 1, power){
     } else { return number ** power; }
 }
 
+const result = pow(number, power);
+
+alert(result);
