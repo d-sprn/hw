@@ -32,4 +32,4 @@ function padString(string, number, symbol = '*', boolean = true){
     console.log(funcString)
 }
 
-padString('dima', 14, '*', true)
+padString('string', 14, '*', true)
