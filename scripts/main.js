@@ -4,16 +4,23 @@ function fib(n){
 
 }
 const number = +prompt('Write number.');
-let power = +prompt('Raised to the power of?');
+let power = prompt('Raised to the power of?');
+let powerCheck = null
 
 
-function pow(number, power = 1){
-    if (isNaN(number)|| isNaN(power)){
-        return 'some error';
-    }
-    return number ** power;
+if (power === null || power === ''){
+    powerCheck = 1
+} else {
+    powerCheck = +power
 }
 
-const result = pow(number, power);
+function pow(number, powerCheck = 1){
+    if (isNaN(number)|| isNaN(powerCheck)){
+        return 'some error';
+    }
+    return number ** powerCheck;
+}
+
+const result = pow(number, powerCheck);
 
 alert(result);
