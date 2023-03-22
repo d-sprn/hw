@@ -1,8 +1,5 @@
 "use strict";
 
-function fib(n){
-
-}
 const number = +prompt('Write number.');
 let power = prompt('Raised to the power of?');
 let powerCheck = null
