@@ -7,7 +7,7 @@ function positiveFunc(arr){
     const funcArray = [];
     let resultArray = [];
 
-    if (arr.length === 0) { return console.log( 'Empty Arrow' ) }
+    if (arr.length === 0) { return 'Empty Arrow' }
     if (arr.length > 0) {
         for (let i = 0 ; i < arr.length; i++){
         if ( arr[i] >= 0 ) { funcArray.push(arr[i]) }
