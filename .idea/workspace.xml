@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38a1788a-5c08-4e0e-814d-e761eb0376eb" name="Changes" comment="Done">
+    <list default="true" id="38a1788a-5c08-4e0e-814d-e761eb0376eb" name="Changes" comment="done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -98,6 +97,7 @@
     <MESSAGE value="add readme" />
     <MESSAGE value="another code for calc" />
     <MESSAGE value="&quot;use strict&quot;;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;use strict&quot;;" />
+    <MESSAGE value="done" />
+    <option name="LAST_COMMIT_MESSAGE" value="done" />
   </component>
 </project>
