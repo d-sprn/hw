@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38a1788a-5c08-4e0e-814d-e761eb0376eb" name="Changes" comment="Rename readme" />
+    <list default="true" id="38a1788a-5c08-4e0e-814d-e761eb0376eb" name="Changes" comment="done" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,7 +16,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="hw_4/strange_calc_no.2" />
+        <entry key="$PROJECT_DIR$" value="hw_15/cycles" />
       </map>
     </option>
   </component>
