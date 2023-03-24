@@ -3,22 +3,21 @@
 const arr = [1, 2, 3, -1, -2, -3];
 
 
-function positiveFunc(){
+function positiveFunc(arr){
     const funcArray = [];
     let resultArray = [];
 
     if (arr.length === 0) { return console.log( 'Empty Arrow' ) }
-    else if (arr.length > 0) {
+    if (arr.length > 0) {
         for (let i = 0 ; i < arr.length; i++){
-            if ( arr[i] >= 0 ){
-                funcArray.push(arr[i]);
-            }
+        if ( arr[i] >= 0 ) { funcArray.push(arr[i]) }
         }
     }
+
     resultArray = funcArray.length > 0 ? funcArray : null;
 
-    return  console.log(resultArray)
+    return  resultArray;
 }
 
-positiveFunc()
+console.log(positiveFunc(arr));
 
