@@ -1,14 +1,17 @@
 "use strict";
 
-let userNumber = +prompt('Write number.');
+const number = Number(prompt('Write the number'));
 
-let result = null;
+const checkFunction = (number) => {
+    const arr = [];
 
-for (let i = 0; i < userNumber; i++){
-    if (userNumber / i === 1){
-        result = false
+    if (isNaN(number) || !isFinite(number)) return 'It is not number';
+    if (number <= 1) return NaN
+
+    for (let i = 2; i <= number; i++){
+        if (number % i === 0) { arr.push(i)}
     }
-
+    return arr.length === 1
 }
 
-console.log(result)
+console.log(checkFunction(number));
