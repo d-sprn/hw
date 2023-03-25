@@ -1,35 +1,26 @@
 "use strict";
 
-function padString(string, number, symbol = '*', boolean = true){
 
-    let funcString = null;
-    let symbolCalc = null;
-    const funcArr = [];
-    let funcString2 = null;
+const padString = (string, number, symbol, boolean = true) => {
+    if (typeof string !== 'string') return 'It is not string';
 
-    if (string === undefined || string === null){
-        return console.log('String - some error');
-    } else if (number === undefined || number === null){
-        return console.log('Number - some error');
+
+    if (typeof number !== 'number' || Number.isNaN(number) || !isFinite(number) ) {
+        return 'It is not number';
     }
-    if (string.length > number){
-        funcString = string.substr(0, number);
-    } else if (string.length < number){
-        symbolCalc = number - string.length
-        for (let i = 0; i < symbolCalc; i++) {
-            funcArr.push(i);
-            funcArr[i] = symbol;
-        }
 
-        funcString2 = funcArr.join('');
 
-        if( boolean === true){
-            funcString = string + funcString2;
-        } else if (boolean === false){
-            funcString = funcString2 + string;
-        }
-    }
-    console.log(funcString)
+    if (string.length === number) return string;
+    if (string.length > number) return string.substring(0, number);
+
+
+    if (typeof symbol !== 'string' || symbol.length !== 1) return 'Write only one symbol';
+    if (typeof boolean !== 'boolean')  return  'right is not bool';
+
+
+    const symbols = symbol.repeat(number - string.length);
+    return boolean ? string + symbols : symbols + string;
 }
 
-padString('string', 14, '*', true)
+
+console.log(padString('hello', 2, '*', false) );
