@@ -1,0 +1,14 @@
+{
+  "name": "hw",
+  "version": "1.0.0",
+  "description": "hw_23",
+  "main": "index.html",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "hw"
+  ],
+  "author": "Suprun D.",
+  "license": "ISC"
+}
