@@ -2,7 +2,7 @@
 
 
 
-const powerFunction = (number, power) => {
+const pow = (number, power) => {
     const powerResult = number**power;
     return alert(`${number} raised to power of ${power} equal ${powerResult}`);
 }
@@ -25,11 +25,20 @@ const modulo = (number, power) =>{
 
 
 const mainFunction = (callback) =>{
+    if (callback === 'string' ) return alert('Some error!');
+    if(callback !== pow && callback !== multiply && callback !== division && callback !== modulo) {
+        return 'Write functions argument';
+    }
+
     const number = Number(prompt('Write number.'));
     const power = Number(prompt('Write second number'));
     if ( number === isNaN(number) || number === isFinite(number) ) return 'Please write number!!';
 
-    return (powerFunction(number, power), multiply(number, power), division(number, power), modulo(number, power))
+
+    if (callback === pow)  return pow(number, power);
+    if (callback === multiply)  return multiply(number, power);
+    if (callback === division)  return division(number, power);
+    if (callback === modulo)  return modulo(number, power);
 }
 
-console.log(mainFunction());
+mainFunction(multiply);
