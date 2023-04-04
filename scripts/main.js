@@ -1,13 +1,15 @@
 "use strict";
 
-function calcBorsh(){
-    let oneLtr = 4;
-    let potato = oneLtr * 0.075;
-    let price = 13;
-    let totalLtr = 48;
-    let totalPrice = Math.ceil(totalLtr * potato) * price;
+// const potato = 0.3;
+//
+// const ltr = 48;
+//
+// const price = 13
 
-    console.log(totalPrice);
+
+
+const borsh = (potatoPerLtr, ltrs, price) => {
+    let result = ((potatoPerLtr * ltrs) * price);
+        return Math.ceil(result)
 }
-
-calcBorsh()
+borsh(0.3, 48, 13)
