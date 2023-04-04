@@ -37,7 +37,7 @@ array4.unshift(4, 5, 6);
 
 const array5 =  ['js', 'css', 'jq'];
 
-// alert(array5[0]);
+alert(array5[0]);
 
 
 // Task #6
@@ -45,7 +45,7 @@ const array5 =  ['js', 'css', 'jq'];
 
 const array6 =  ['js', 'css', 'jq'];
 
-// alert(array6[array5.length-1]);
+alert(array6[array5.length-1]);
 
 
 // Task #7
