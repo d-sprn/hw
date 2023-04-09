@@ -131,3 +131,5 @@ for (let i = 0; i < arr11.length; i++) {
 
 
 console.log(sum11)
+
+
