@@ -1,15 +1,9 @@
 "use strict";
 
-// const potato = 0.3;
-//
-// const ltr = 48;
-//
-// const price = 13
-
-
 
 const borsh = (potatoPerLtr, ltrs, price) => {
-    let result = ((potatoPerLtr * ltrs) * price);
-        return Math.ceil(result)
+    const result = Math.ceil((potatoPerLtr * ltrs) * price);
+        return result
 }
-borsh(0.3, 48, 13)
+
+console.log(borsh(0.3, 48, 13));
