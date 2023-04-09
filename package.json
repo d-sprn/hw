@@ -1,0 +1,11 @@
+{
+  "name": "hw25",
+  "version": "1.0.0",
+  "description": "hw25",
+  "main": "index.html",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "D.Suprun",
+  "license": "ISC"
+}
