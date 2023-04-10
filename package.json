@@ -1,0 +1,14 @@
+{
+  "name": "hw28",
+  "version": "1.0.0",
+  "description": "hw28",
+  "main": "index.html",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "hw"
+  ],
+  "author": "D.Suprun",
+  "license": "ISC"
+}
