@@ -1,107 +1,75 @@
-"use strict";
+const users = [
+  {
+    index: 0,
+    isActive: true,
+    balance: "$2,226.60",
+    name: "Eugenia Sawyer",
+    gender: "female",
+    phone: "+1 (840) 583-3207",
+    address: "949 John Street, Rose, Puerto Rico, 1857",
+  },
+  {
+    index: 1,
+    isActive: true,
+    balance: "$2,613.77",
+    name: "Pauline Gallegos",
+    gender: "female",
+    phone: "+1 (985) 593-3328",
+    address: "328 Greenpoint Avenue, Torboy, North Dakota, 6857",
+  },
+  {
+    index: 2,
+    isActive: false,
+    balance: "$3,976.41",
+    name: "Middleton Chaney",
+    gender: "male",
+    phone: "+1 (995) 591-2478",
+    address: "807 Fleet Walk, Brutus, Arkansas, 9783",
+  },
+  {
+    index: 3,
+    isActive: true,
+    balance: "$1,934.58",
+    name: "Burns Poole",
+    gender: "male",
+    phone: "+1 (885) 559-3422",
+    address: "730 Seba Avenue, Osage, Alabama, 6290",
+  },
+  {
+    index: 4,
+    isActive: true,
+    balance: "$3,261.65",
+    name: "Mcfadden Horne",
+    gender: "male",
+    phone: "+1 (942) 565-3988",
+    address: "120 Scholes Street, Kirk, Michigan, 1018",
+  },
+  {
+    index: 5,
+    isActive: false,
+    balance: "$1,790.56",
+    name: "Suzette Lewis",
+    gender: "female",
+    phone: "+1 (837) 586-3283",
+    address: "314 Dunne Place, Bawcomville, Guam, 9053",
+  },
+];
 
+const userPhoneNumber = (arrow) => {
+  const userBalance = arrow.filter(
+    (user) => parseFloat(user.balance.replace(",", "").replace("$", "")) > 2000
+  );
+  const phoneNum = userBalance.map((user) => user.phone);
+  const totalBalance = arrow.reduce(
+    (sum, user) =>
+      sum + parseFloat(user.balance.replace(",", "").replace("$", "")),
+    0
+  );
+  return {
+    "Phone number": phoneNum,
+    "Total balance": Math.ceil(totalBalance),
+  };
+};
 
-const arr = [16,-37,54,-4,72,-56,47,4,-16,25,-37,46,4,-51,27,-63,4,-54,76,-4,12,-35,4,47];
-
-// Task 1
-
-const sumAndCount = (arr) => {
- let sum = 0;
- let count = 0;
- for (let i = 0; i < arr.length; i++) {
-  if (arr[i] > 0) {
-   sum += arr[i];
-   count++;
-  }
- }
- return { sum, count };
-}
-
-console.log(sumAndCount(arr))
-
-
-// Task 2
-
-
-const findMinAndIndex = (array) => {
- const min = array.reduce((x, y) => Math.min(x, y));
- const index = array.indexOf(min)
- return { min, index }
-}
-
-console.log(findMinAndIndex(arr))
-
-// Task 3
-
-const findMaxAndIndex = (array) => {
- const max = array.reduce((x, y) => Math.max(x, y));
- const index = array.indexOf(max)
- return { max, index }
-}
-
-console.log(findMaxAndIndex(arr))
-
-// Task 4
-const minArr = [];
-arr.forEach((item) => { if (item < 0 ) minArr.push(item) })
-
-console.log(minArr.length)
-
-// Task 5
-
-const oddFunction = (array) => {
- const oddArr = [];
- array.forEach((item) => { if ((item > 0) && (item % 2 !== 0) ) oddArr.push(item)})
- return oddArr.length
-}
-
-console.log(oddFunction(arr))
-
-// Task 6
-
-const evenFunction = (array) => {
- const evenArr = [];
- array.forEach((item) => { if ((item > 0) && (item % 2 === 0) ) evenArr.push(item)})
- return evenArr.length
-}
-
-console.log(evenFunction(arr))
-
-// Task 7
-const sumEvenFunction = (array) => {
- const evenArr = [];
- array.forEach((item) => { if ((item > 0) && (item % 2 === 0) ) evenArr.push(item)})
- const sumEven = evenArr.reduce((a, b) => { return a + b})
- return sumEven
-}
-console.log(sumEvenFunction(arr))
-
-// Task 8
-
-const sumOddFunction = (array) => {
- const OddArr = [];
- array.forEach((item) => { if ((item > 0) && (item % 2 !== 0) ) OddArr.push(item)})
- const sumOdd = OddArr.reduce((a, b) => { return a + b})
- return sumOdd
-}
-console.log(sumOddFunction(arr))
-
-// Task 9
-
-const sumPositive = (firstFunc, secondFunc) => {
- const sum = firstFunc * secondFunc
- return sum
-}
-
-console.log(sumPositive(sumEvenFunction(arr), sumOddFunction(arr)))
-
-// Task 10
-
-const biggerNum = (array) => {
- const max = array.reduce((x, y) => Math.max(x, y));
- for (let i = 0; i < array.length; i++)
-  if (array[i] < max) { array[i] = 0 }
- return array
-}
-
-console.log(biggerNum(arr))
+userPhoneNumber(users);
+console.log(userPhoneNumber(users));
