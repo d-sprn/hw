@@ -1,5 +1,6 @@
 'use strict';
 
+
 void (function() {
   const func1 = () => {
     let num = 0;
