@@ -1,25 +1,24 @@
 'use strict';
 
 void (function () {
-  const randomNumber = () => {
-    const usedNumbers = [];
+  const array = [1, 2, 3, 4, 5, [1, 2, 3, [1, 2, 3]] ]
 
-    const generateNumber = () => {
-      const number = Math.floor(Math.random() * 100) + 1;
+  const func = (arr, newArr = []) => {
 
-      if (usedNumbers.includes(number)) {
-        return generateNumber();
+    for (const item of arr){
+      if (!Array.isArray(item)){
+        newArr.push(item)
+      } else {
+        func(item, newArr)
       }
-      usedNumbers.push(number);
-      return number;
-    };
+    }
 
-    return generateNumber;
-  };
+    return newArr
 
-  const randomNumberArray = randomNumber();
-
-  for (let i = 0; i < 100; i++) {
-    randomNumberArray();
   }
 })();
+
+
+
+
+
