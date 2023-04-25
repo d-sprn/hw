@@ -1,30 +1,42 @@
-// Task #1
+'use strict'
 
 void (function () {
-  const func1 = (n) => {
-    if (n < 1) return 1;
-    return n * func1(n - 1);
-  };
-})();
-
-// Task #2
-
-void (function () {
-  const func2 = (n, pow) => {
-    if (pow === 1) {
-      return n;
+  const palindrome = (num, steps = 0) => {
+    if (isPalindrome(num)) {
+      return { result: num, steps };
+    } else {
+      const reversedNum = reverse(num);
+      return palindrome(num + reversedNum, steps + 1);
     }
-    return n * func2(n, pow - 1);
-  };
+  }
 
-  func2(2, 5);
+  const isPalindrome = (num) => {
+    const str = num.toString();
+    const len = str.length;
+
+    for (let i = 0; i < len / 2; i++) {
+      if (str[i] !== str[len - 1 - i]) {
+        return false;
+      }
+    }
+
+    return true;
+  }
+
+  const reverse = (num) => {
+    const str = num.toString();
+    const len = str.length;
+    let result = '';
+
+    for (let i = len - 1; i >= 0; i--) {
+      result += str[i];
+    }
+
+    return parseInt(result);
+  }
 })();
 
-// Task #3
 
-void (function() {
-  const func3 = (a, b) => {
-    if (b === 0) return a;
-    return func3(a + 1, b - 1);
-  };
-})
+
+
+
