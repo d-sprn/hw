@@ -1,30 +1,35 @@
-// Task #1
+'use strict'
 
 void (function () {
-  const func1 = (n) => {
-    if (n < 1) return 1;
-    return n * func1(n - 1);
-  };
-})();
+  const calculator = {
 
-// Task #2
+    first: 0,
+    second: 0,
 
-void (function () {
-  const func2 = (n, pow) => {
-    if (pow === 1) {
-      return n;
+    read(){
+      this.first = +prompt('Write first number');
+      this.second = +prompt('write second number');
+      if (!isNaN(this.first) && !isNaN(this.second)){
+        return  { first: this.first, second: this.second}
+      } else { return console.log('Write number') }
+    },
+
+    sum(){
+      return this.first + this.second;
+    },
+
+    mul(){
+      return this.first * this.second
     }
-    return n * func2(n, pow - 1);
-  };
+  }
 
-  func2(2, 5);
-})();
 
-// Task #3
+  calculator.read();
+  alert( calculator.sum() );
+  alert( calculator.mul() );
+})()
 
-void (function() {
-  const func3 = (a, b) => {
-    if (b === 0) return a;
-    return func3(a + 1, b - 1);
-  };
-})
+
+
+
+
