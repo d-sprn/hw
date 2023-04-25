@@ -1,25 +1,34 @@
 'use strict';
 
 void (function () {
-  const randomNumber = () => {
-    const usedNumbers = [];
-
-    const generateNumber = () => {
-      const number = Math.floor(Math.random() * 100) + 1;
-
-      if (usedNumbers.includes(number)) {
-        return generateNumber();
-      }
-      usedNumbers.push(number);
-      return number;
-    };
-
-    return generateNumber;
-  };
-
-  const randomNumberArray = randomNumber();
-
-  for (let i = 0; i < 100; i++) {
-    randomNumberArray();
+  function bind(fn, context, ...rest) {
+    return function(...args) {
+      const id = Date.now().toString();
+      context[id] = fn;
+      const res = context[id](...rest, ...args);
+      delete context[id];
+      return res;
+    }
   }
+
+  const user = {
+    firstName: '',
+    lastName: '',
+    name() {
+      return `${this.firstName} ${this.lastName}`
+    }
+  }
+
+  function fullName(firstName, lastName) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    return this.name();
+  }
+
+
+  console.log(bind(fullName, user)('aaaaa', 'bbbbb'));
 })();
+
+
+
+
