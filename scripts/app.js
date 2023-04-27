@@ -1,34 +1,49 @@
 'use strict';
 
 void (function () {
-  function bind(fn, context, ...rest) {
-    return function(...args) {
-      const id = Date.now().toString();
-      context[id] = fn;
-      const res = context[id](...rest, ...args);
-      delete context[id];
-      return res;
+  const counter = (initial = 0) => {
+    let count = initial;
+    let increase = 0;
+    let decrease = 0;
+    let getCount = 0;
+
+    const  increaseFunc = () => {
+      count++;
+      increase++;
     }
-  }
-
-  const user = {
-    firstName: '',
-    lastName: '',
-    name() {
-      return `${this.firstName} ${this.lastName}`
+    const  decreaseFunc = () => {
+      count--;
+      decrease++;
     }
+    const countFunc = () => {
+      getCount++;
+      return count
+    }
+    const statFunc = () => {
+      return { increase, decrease, getCount, }
+    }
+    const reset = () => {
+      count = initial;
+      increase = 0;
+      decrease = 0;
+      getCount = 0;
+    }
+
+    return {increaseFunc, decreaseFunc, statFunc, reset, countFunc}
   }
 
-  function fullName(firstName, lastName) {
-    this.firstName = firstName;
-    this.lastName = lastName;
-    return this.name();
-  }
 
 
-  console.log(bind(fullName, user)('aaaaa', 'bbbbb'));
+  const checkCount = counter(10);
+  checkCount.increaseFunc();
+  checkCount.increaseFunc();
+  checkCount.increaseFunc();
+  checkCount.decreaseFunc();
+  checkCount.decreaseFunc();
+
+  console.log(checkCount.statFunc());
+  console.log(checkCount.countFunc());
+
 })();
-
-
 
 
