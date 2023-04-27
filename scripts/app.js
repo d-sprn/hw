@@ -105,13 +105,10 @@ for (let i = 0; i < arr9.length / 2; i++) {
 
 
 const arr10 = [[9, 4, 7], [1, 3], [6]];
-let sum10 = 0;
 
-for (let i = 0; i < arr10.length; i++) {
-    for (let j = 0; j < arr10[i].length; j++) {
-        sum10 += arr10[i][j];
-    }
-}
+const sum10 = arr10.flat().reduce(function (sum, num){
+    return sum + num
+},0)
 
 
 
@@ -119,17 +116,12 @@ for (let i = 0; i < arr10.length; i++) {
 
 
 const arr11 = [[[2, 2], [3, 3]], [[4, 4], [5, 5]]];
-let sum11 = 0;
-
-for (let i = 0; i < arr11.length; i++) {
-    for (let j = 0; j < arr11[i].length; j++) {
-        for (let k = 0; k < arr11[i][j].length; k++) {
-            sum11 += arr11[i][j][k];
-        }
-    }
-}
+const sum11 = arr10.flat().reduce(function (sum, num){
+    return sum + num
+},0)
 
 
-console.log(sum11)
+
+
 
 
