@@ -116,12 +116,8 @@ const sum10 = arr10.flat().reduce(function (sum, num){
 
 
 const arr11 = [[[2, 2], [3, 3]], [[4, 4], [5, 5]]];
-const sum11 = arr10.flat().reduce(function (sum, num){
+const sum11 = arr11.flat(2).reduce(function (sum, num){
     return sum + num
 },0)
 
-
-
-
-
-
+console.log(sum11);
