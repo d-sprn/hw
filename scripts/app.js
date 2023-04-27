@@ -25,20 +25,12 @@ const modulo = (number, power) =>{
 
 
 const mainFunction = (callback) =>{
-    if (callback === 'string' ) return alert('Some error!');
-    if(callback !== pow && callback !== multiply && callback !== division && callback !== modulo) {
-        return 'Write functions argument';
-    }
 
     const number = Number(prompt('Write number.'));
     const power = Number(prompt('Write second number'));
     if ( number === isNaN(number) || number === isFinite(number) ) return 'Please write number!!';
 
-
-    if (callback === pow)  return pow(number, power);
-    if (callback === multiply)  return multiply(number, power);
-    if (callback === division)  return division(number, power);
-    if (callback === modulo)  return modulo(number, power);
+    return callback(number, power)
 }
 
-mainFunction(multiply);
+mainFunction(modulo);
