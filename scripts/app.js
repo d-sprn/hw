@@ -1,26 +1,20 @@
 'use strict';
 
-void (function () {
-
-  let ladder = {
-    step: 0,
-    up() {
-      this.step++;
-      return this
-    },
-    down() {
-      this.step--;
-      return this
-    },
-    showStep() {
-      alert( this.step );
-      return this
+const generateList = (array) => {
+  const ul = document.createElement('ul');
+  for (let i = 0; i < array.length; i++) {
+    const li = document.createElement('li');
+    if (Array.isArray(array[i])) {
+      li.appendChild(generateList(array[i]));
+    } else {
+      li.innerHTML = array[i];
     }
-  };
-
-  ladder.up().up().down().up().showStep()
-
-})();
-
+    ul.appendChild(li);
+  }
+  return ul;
+}
 
 
+const myArray = [1, 2, [1.1, 1.2, 1.3], 3];
+const myList = generateList(myArray);
+document.body.appendChild(myList);
